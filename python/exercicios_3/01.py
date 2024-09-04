@@ -20,10 +20,13 @@ while valido == False:
         print("Esse bloco não existe.")
         continue
 
+    caixa = ""
     if bloco % 2 == 0:
-        print("A caixa que abastece seu bloco eh a A")
+        caixa = "A"
     else:
-        print("A caixa que abastece seu bloco eh a B")
+        caixa = "B"
+
+    print(f"A caixa que abastece seu bloco eh a {caixa}")
 
     valido = True
 

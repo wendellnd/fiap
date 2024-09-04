@@ -18,10 +18,13 @@ while valido == False:
         print("Esse bloco não existe.")
         continue
 
+    administrador = ""
     if bloco > 10 and bloco <= 20:
-        print("SR Hamilton administra seu bloco.")
+        administrador = "SR Hamilton"
     else:
-        print("SR José administra seu bloco.")
+        administrador = "SR José"
+
+    print(f"{administrador} administra seu bloco.")
 
     valido = True
 
