@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "categoria": "Sobremesas",
+    "nome": "Brigadeiro",
+    "ingredientes": [
+      "1 lata de leite condensado",
+      "1 colher de manteiga",
+      "3 colheres de chocolate em pó"
+    ],
+    "modoPreparo": "Misture todos os ingredientes e leve ao fogo baixo, mexendo até soltar do fundo da panela.",
+    "tempo": "20 minutos",
+    "imagem": "/imagens/brigadeiro.png"
+  },
+  {
+    "id": 2,
+    "categoria": "Sobremesas",
+    "nome": "Pavê de Chocolate",
+    "ingredientes": [
+      "1 pacote de biscoito champagne",
+      "2 latas de leite condensado",
+      "200g de chocolate meio amargo"
+    ],
+    "modoPreparo": "Derreta o chocolate, misture com o leite condensado e monte em camadas com os biscoitos.",
+    "tempo": "30 minutos",
+    "imagem": "/imagens/pave_chocolate.png"
+  },
+  {
+    "id": 3,
+    "categoria": "Entradas",
+    "nome": "Bruschetta",
+    "ingredientes": [
+      "1 pão italiano",
+      "2 tomates picados",
+      "1 dente de alho",
+      "Azeite a gosto"
+    ],
+    "modoPreparo": "Toste o pão, esfregue o alho, coloque os tomates e regue com azeite.",
+    "tempo": "15 minutos",
+    "imagem": "/imagens/bruschetta.png"
+  },
+  {
+    "id": 4,
+    "categoria": "Entradas",
+    "nome": "Guacamole",
+    "ingredientes": [
+      "2 abacates maduros",
+      "1 tomate picado",
+      "1 cebola picada",
+      "Suco de limão a gosto"
+    ],
+    "modoPreparo": "Amasse os abacates, misture os outros ingredientes e sirva com tortilhas.",
+    "tempo": "10 minutos",
+    "imagem": "/imagens/guacamole.png"
+  },
+  {
+    "id": 5,
+    "categoria": "Pratos Principais",
+    "nome": "Frango à Parmegiana",
+    "ingredientes": [
+      "4 filés de peito de frango",
+      "2 ovos batidos",
+      "Farinha de rosca a gosto",
+      "Molho de tomate a gosto",
+      "Queijo muçarela a gosto"
+    ],
+    "modoPreparo": "Empane os filés, frite, coloque o molho e o queijo e leve ao forno.",
+    "tempo": "40 minutos",
+    "imagem": "/imagens/frango_parmegiana.png"
+  },
+  {
+    "id": 6,
+    "categoria": "Pratos Principais",
+    "nome": "Lasanha à Bolonhesa",
+    "ingredientes": [
+      "500g de carne moída",
+      "1 pacote de massa para lasanha",
+      "2 latas de molho de tomate",
+      "Queijo muçarela a gosto"
+    ],
+    "modoPreparo": "Monte camadas de massa, carne e queijo, leve ao forno até dourar.",
+    "tempo": "1 hora",
+    "imagem": "/imagens/lasanha_bolonhesa.png"
+  },
+  {
+    "id": 7,
+    "categoria": "Bebidas",
+    "nome": "Caipirinha",
+    "ingredientes": ["1 limão", "2 colheres de açúcar", "Cachaça a gosto"],
+    "modoPreparo": "Corte o limão, misture com o açúcar e adicione a cachaça.",
+    "tempo": "5 minutos",
+    "imagem": "/imagens/caipirinha.png"
+  },
+  {
+    "id": 8,
+    "categoria": "Bebidas",
+    "nome": "Smoothie de Frutas",
+    "ingredientes": [
+      "1 banana",
+      "1/2 xícara de morangos",
+      "1/2 xícara de iogurte natural"
+    ],
+    "modoPreparo": "Bata tudo no liquidificador até ficar homogêneo.",
+    "tempo": "5 minutos",
+    "imagem": "/imagens/smoothie_frutas_2.png"
+  }
+]
