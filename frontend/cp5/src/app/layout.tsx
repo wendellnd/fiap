@@ -3,6 +3,7 @@ import Header from "@/components/Header/page";
 import Footer from "@/components/Footer/page";
 import "./globals.css";
 import { ThemeProvider } from "@/context/ThemeContext";
+import { RecipeProvider } from "@/context/RecipeContext";
 
 export const metadata: Metadata = {
   title: "Receitas",
@@ -16,15 +17,17 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <ThemeProvider>
-        <body>
-          <div className="min-h-screen flex flex-col justify-between">
-            <Header />
-            {children}
-            <Footer />
-          </div>
-        </body>
-      </ThemeProvider>
+      <RecipeProvider>
+        <ThemeProvider>
+          <body>
+            <div className="min-h-screen flex flex-col justify-between">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </body>
+        </ThemeProvider>
+      </RecipeProvider>
     </html>
   );
 }
