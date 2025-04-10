@@ -17,7 +17,7 @@ const RecipeItem = ({ recipe }: RecipeItemProps) => {
       href={`/receitas/${recipe.id}`}
       key={recipe.id}
       className={`rounded-lg shadow-lg p-4 w-64 ${
-        theme == "light" ? "bg-white" : "bg-white dark:bg-gray-700"
+        theme == "light" ? "bg-white text-black" : "bg-gray-700 text-white"
       }
     hover:bg-[#ff8400] transition duration-200`}
     >

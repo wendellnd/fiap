@@ -2,7 +2,8 @@ export type RecipeCategory =
   | "Sobremesas"
   | "Entradas"
   | "Pratos Principais"
-  | "Bebidas";
+  | "Bebidas"
+  | "Todas";
 
 export type Recipe = {
   id: number;
@@ -14,7 +15,7 @@ export type Recipe = {
   imagem: string;
 };
 
-export type RecipeList = Recipe[];
+export type RecipeListType = Recipe[];
 
 export type RecipeListByCategory = {
   [key in RecipeCategory]: Recipe[];

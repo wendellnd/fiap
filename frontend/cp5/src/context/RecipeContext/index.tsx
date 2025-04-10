@@ -1,27 +1,28 @@
 "use client";
 import { createContext, useContext, useEffect, useState } from "react";
 
-import { Recipe, RecipeList } from "@/types/recipe";
+import { Recipe, RecipeCategory, RecipeListType } from "@/types/recipe";
 
 export interface RecipeContextType {
-  recipes: RecipeList;
-  setRecipes: (recipes: RecipeList) => void;
-  categories: string[];
-  setCategories: (categories: string[]) => void;
-  selectedCategory: string | null;
-  setSelectedCategory: (category: string | null) => void;
-  filteredRecipes: RecipeList;
-  setFilteredRecipes: (recipes: RecipeList) => void;
+  recipes: RecipeListType;
+  setRecipes: (recipes: RecipeListType) => void;
+  categories: RecipeCategory[];
+  setCategories: (categories: RecipeCategory[]) => void;
+  selectedCategory: RecipeCategory;
+  setSelectedCategory: (category: RecipeCategory) => void;
+  filteredRecipes: RecipeListType;
+  setFilteredRecipes: (recipes: RecipeListType) => void;
 }
 
 export const RecipeContext = createContext<RecipeContextType | undefined>(
   undefined
 );
 export const RecipeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [recipes, setRecipes] = useState<RecipeList>([]);
-  const [categories, setCategories] = useState<string[]>([]);
-  const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
-  const [filteredRecipes, setFilteredRecipes] = useState<RecipeList>([]);
+  const [recipes, setRecipes] = useState<RecipeListType>([]);
+  const [categories, setCategories] = useState<RecipeCategory[]>([]);
+  const [selectedCategory, setSelectedCategory] =
+    useState<RecipeCategory>("Todas");
+  const [filteredRecipes, setFilteredRecipes] = useState<RecipeListType>([]);
 
   const fetchData = async () => {
     try {
@@ -29,9 +30,13 @@ export const RecipeProvider = ({ children }: { children: React.ReactNode }) => {
       const data = await response.json();
       setRecipes(data);
 
-      const uniqueCategories = Array.from<string>(
-        new Set(data.map((recipe: Recipe) => recipe.categoria))
+      const uniqueCategories: RecipeCategory[] = ["Todas"];
+      uniqueCategories.push(
+        ...Array.from<RecipeCategory>(
+          new Set(data.map((recipe: Recipe) => recipe.categoria))
+        )
       );
+
       setCategories(uniqueCategories);
       setFilteredRecipes(data);
     } catch (error) {
