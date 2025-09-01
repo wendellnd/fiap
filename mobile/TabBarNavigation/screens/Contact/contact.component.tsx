@@ -1,22 +1,25 @@
-import {View, Text} from "react-native";
+import { View, Text } from "react-native";
 
 // Define o componente funcional Contact
 export const Contact: React.FC = () => {
   return (
-    <View style={{
+    <View
+      style={{
         width: "100%",
         display: "flex",
-        justifyContent: "center", 
+        justifyContent: "center",
         alignItems: "center",
-        height: "100%"
-    }}>
+        height: "100%",
+      }}
+    >
       <Text
-            style={{
-                color: "gray",
-                fontSize: 40,
-            }}>
+        style={{
+          color: "gray",
+          fontSize: 40,
+        }}
+      >
         Contact
-        </Text>
+      </Text>
     </View>
   );
-}
+};
